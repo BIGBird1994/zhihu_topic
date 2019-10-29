@@ -16,7 +16,30 @@ class ZhihuItem(Item):
       key_words = Field()
       question_info = Field()
       
-      
-      
+
 class UserId(Item):
-      user_id = Field()
+        user_id = Field()
+      
+
+class ForchangeItem(Item):
+        q_title = Field()
+        q_description = Field()
+        q_nickname = Field()
+        q_ctime = Field()
+        q_follower = Field()
+        q_broswer_num = Field()
+        a_num = Field()
+        a_content = Field()
+        a_nickname = Field()
+        a_time = Field()
+        a_likenum = Field()
+        comment_num = Field()
+        comment_nickname = Field()
+        comment_content = Field()
+        
+    
+        
+        
+        
+      
+      

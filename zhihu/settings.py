@@ -54,7 +54,7 @@ DEFAULT_REQUEST_HEADERS = {
 # Enable or disable downloader middlewares
 # See http://scrapy.readthedocs.org/en/latest/topics/downloader-middleware.html
 DOWNLOADER_MIDDLEWARES = {
-   'zhihu.ProxyMiddleware.ProxyMiddleware': 399,
+   # 'zhihu.ProxyMiddleware.ProxyMiddleware': 399,
 }
 
 # Enable or disable extensions
@@ -65,9 +65,9 @@ DOWNLOADER_MIDDLEWARES = {
 
 # Configure item pipelines
 # See http://scrapy.readthedocs.org/en/latest/topics/item-pipeline.html
-ITEM_PIPELINES = {
-   'zhihu.pipelines.ZhihuPipeline': 300,
-}
+# ITEM_PIPELINES = {
+#    'zhihu.pipelines.ZhihuPipeline': 300,
+# }
 
 # Enable and configure the AutoThrottle extension (disabled by default)
 # See http://doc.scrapy.org/en/latest/topics/autothrottle.html
@@ -90,18 +90,18 @@ ITEM_PIPELINES = {
 #HTTPCACHE_IGNORE_HTTP_CODES = []
 #HTTPCACHE_STORAGE = 'scrapy.extensions.httpcache.FilesystemCacheStorage'
 
-SCHEDULER = "scrapy_redis.scheduler.Scheduler"
-DUPEFILTER_CLASS = "scrapy_redis.dupefilter.RFPDupeFilter"
-SCHEDULER_PERSIST = True
-REDIS_PARAMS = {
-    'db': 1,
-    'password':'11111'
-}
-REDIS_PROT = '6379'
-REDIS_HOST = 'localhost'
-SCHEDULER_QUEUE_CLASS = 'scrapy_redis.queue.SpiderPriorityQueue'
-HTTPERROR_ALLOWED_CODES = [302,403,404,418,911,500,502,503]
-DOWNLOAD_FAIL_ON_DATALOSS = False
-RETRY_TIMES = 0
-DOWNLOAD_TIMEOUT = 50
+# SCHEDULER = "scrapy_redis.scheduler.Scheduler"
+# DUPEFILTER_CLASS = "scrapy_redis.dupefilter.RFPDupeFilter"
+# SCHEDULER_PERSIST = True
+# REDIS_PARAMS = {
+#     'db': 1,
+#     'password':'11111'
+# }
+# REDIS_PROT = '6379'
+# REDIS_HOST = 'localhost'
+# SCHEDULER_QUEUE_CLASS = 'scrapy_redis.queue.SpiderPriorityQueue'
+# HTTPERROR_ALLOWED_CODES = [302,403,404,418,911,500,502,503]
+# DOWNLOAD_FAIL_ON_DATALOSS = False
+# RETRY_TIMES = 0
+# DOWNLOAD_TIMEOUT = 50
 
